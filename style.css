@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Ranga:wght@400;700&display=swap');
+
+:root {
+    --mainFontColor: #ffffff;
+    --textColor: #ffdddd;
+    --textColorHover:#c2c2c2;
+    --dark:#000000;
+    --dark80:rgba(89,16,16,.8); 
+    --dark60:rgba(89,16,16,.6); 
+    --transition: all 0.3s ease 0s;
+}
+
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+
+html, body {
+    height:100%;
+    overflow:auto;
+}
+
+body{
+    background:
+        linear-gradient(
+            var(--dark60),
+            var(--dark60)
+        ),
+        url(./images/homeBackground.jpg);
+        background-position:center;
+        background-repeat:none;
+        background-size:cover;
+}
+
+p, a {
+    font-family:"Ranga", sans-sarif;
+    color:var(--textColor);
+    text-decoration:none;
+}
+
+a, .logo {
+    cursor:pointer;
+}
+
+main {
+    height:100%;
+    display:grid;
+    grid-template-columns: minmax(60px, 1fr) repeat(6, minmax(50px, 190px)) minmax(60px, 1fr);
+}
+
+header {
+    grid-column:2 / span 6;
+}
+
+nav {
+    display:flex;
+    align-items: center;
+    height:120px;
+}
+
+.links {
+    margin-left:auto;
+}
+
+.links a {
+    font-size:1.5rem;
+    font-weight:400;
+    transition: var(--transition);
+}
+
+.links a {
+    margin-right:50px;
+}
+
+.links a:hover {
+    color: var(--textColorHover);
+}
+
+.mainText {
+    grid-column: 2 / span 7;
+    padding:44px 0 0 0px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.mainFont{
+    color:var(--mainFontColor);
+    font-family: "Ranga", sans-serif;
+    font-weight:700;
+    font-size:3rem;
+}
+
+.info{
+    display:flex;
+    margin: 0 60px 40px 0;
+}
+
+.aboutMe, p{
+    font-size:2.5rem;
+    font-weight:400;
+}
+
+.features{
+    grid-column: 2/ span 7;
+    align-self: end;
+    padding: 40px 0 0 60px;
+    display:flex;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.feature{
+    display:flex;
+    margin: 0 60px 40px 0;
+}
+
+.feature img {
+    height:100px;
+    margin-right:20px;
+}
+
+.featureInfo{
+    margin-top:10px;
+}
+
+.featureInfoTop{
+    font-size:0.8125rem;
+    font-weight:700;
+    text-transform:uppercase;
+    margin-bottom:10px;
+}
+
+.featureInfoBottom{
+    width: 180px;
+    font-size:1rem;
+    font-weight:400;
+}
