@@ -87,12 +87,12 @@ p {
 
 code {
   font-family: monospace;
-  color: #862e9c;
+  color: #69db7c;
   font-size: 1.2rem;
 }
 
 code pre {
-  background-color: #181b1f;
+  background-color: #343a40;
   padding: 1rem;
   border-radius: 2rem;
 }
@@ -274,11 +274,18 @@ main img {
 }
 
 .tech-content img {
-  width: 110rem;
+  width: 100rem;
 }
 
 .tech-btn {
   margin-bottom: 6rem;
+}
+
+.tech-horizontal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
 }
 
 .tech-horizontal h3 {
@@ -290,10 +297,6 @@ video {
   width: 100rem;
 }
 
-iframe {
-  width: 120rem;
-  height: 75vh;
-}
 /* PD CONTENT */
 /* ********** */
 

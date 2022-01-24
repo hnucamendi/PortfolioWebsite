@@ -79,63 +79,19 @@
             My very first program, my very first coding Project! Nether
             Traveler.
           </p>
+          <img
+            src="img/techImg/NetherTravelerCode.png"
+            alt="Nether Traveler code"
+          />
+          <img
+            src="img/techImg/NetherTravelerSolution.png"
+            alt="Nether Traveler Result"
+          />
           <code>
             <pre>
-            import java.util.Scanner;
-
-public class NetherTraveler {
-    public static void main(String[] args) throws Exception {
-        Scanner overworld1 = new Scanner(System.in);
-        double xVal, yVal, zVal, xXVal, zZVal, yYVal, xAnswer, yAnswer, zAnswer, xXAnswer, yYAnswer, zZAnswer, fXAnswer,
-                fYAnswer, fZAnswer, portalLocX, portalLocY, portalLocZ;
-
-        // xanswer, y answer, zanswer are the result of the difference i.e Desired
-        // Location - Known Location
-        // xxanswer, yyanswer, zzanswer is the result of xanswer, yanswer, zanswer / by
-        // 8 (the length of a nether block)
-        // fxanswer, fyanswer, fzanswer is the result of xx/yy/zz answer + The value of
-        // known portal / 8
-
-        System.out.println("Enter desired Overworld X value: "); // Enter the values of your desired X portal location
-        xVal = overworld1.nextDouble();
-
-        System.out.println("Enter Overworld Y value: "); // Enter the values of your desired Y portal location
-        yVal = overworld1.nextDouble();
-
-        System.out.println("Enter desired overworld Z value: "); // Enter the values of your desired Z location
-        zVal = overworld1.nextDouble();
-
-        System.out.println("Enter known Overworld-portal X value: "); // Enter the X value of your known portal
-        xXVal = overworld1.nextDouble();
-        xAnswer = xVal - xXVal; // Get the differance of X values
-        xXAnswer = xAnswer / 8; // Divide the differance result by 8
-
-        System.out.println("Enter known Overworld-portal Y value: "); // Enter the Y value of your known portal
-        yYVal = overworld1.nextDouble();
-        yAnswer = yVal - yYVal; // Get the differance of Y values
-        yYAnswer = yAnswer / 8; // Divide the differance result by 8
-
-        System.out.println("Enter known overworld-portal Z value: "); // Enter the Z value of your known portal
-        zZVal = overworld1.nextDouble();
-        zAnswer = zVal - zZVal; // Get the differance of Z values
-        zZAnswer = zAnswer / 8; // Divide the differance result by 8
-
-        portalLocX = (xXVal / 8);
-        portalLocY = (yYVal / 8);
-        portalLocZ = (zZVal / 8);
-
-        fXAnswer = portalLocX + xXAnswer;
-        fYAnswer = portalLocY + yYAnswer;
-        fZAnswer = portalLocZ + zZAnswer;
-
-        System.out.println("Here are your coordinates: "); // Prints text
-        System.out.print("XYZ (-X=West)(X=East) " + fXAnswer + " / "); // Prints Text + result of xxanswer
-        System.out.print(fYAnswer + " / "); // Prints Text + result of yyanswer
-        System.out.println(fZAnswer + " (-Z=North)(Z=South)"); // Prints Text + result of zzanswer
-        System.out.println(
-                " Make sure to build portal in the Nether. Build by this many blocks not at these set of coordinates!");
-    }
-}
+Here are your coordinates: 
+XYZ (-X=West)(X=East) 4.25 / 84.625 / 8.0 (-Z=North)(Z=South)
+ Make sure to build portal in the Nether. Build by this many blocks not at these set of coordinates!
             </pre>
           </code>
           <p>
@@ -165,251 +121,44 @@ public class NetherTraveler {
             And with this project I got to understand a lot of fundamental
             concepts and get comfortable trying new things
           </p>
+          <img
+            src="img/techImg/candleShopCode.png"
+            alt="Nether Traveler code"
+          />
+          <img
+            src="img/techImg/candleShopSolution.png"
+            alt="Nether Traveler Result"
+          />
           <code>
             <pre>
+Receipt
 
-// in interaction tab -- > run CandleShop
-import java.util.Scanner;
-import java.text.DecimalFormat;
-//The candle names are
-//Luscious Lavender
-//Fragrent Florals
-//Spicy N' Dicey
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-//List out the Type attributes for candle one
-class TypeCandleOne {
-    public final String TYPE_CANDLE_NAME_1;
-    private double typeCandlePrice1;
-    private int typeCandleBurnTime1;
-    private int typeCandleAmount1;
+Luscious Lavender
+Amount: 12
+Burn Time: 5 hours
+Dollar per Burn Time: 6.00
+Price: $30.00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    public TypeCandleOne(String lusciousLavender, double lusciousLavenderPrice, int lusciousLavenderBurnTime,
-            int lusciousLavenderAmount) {
-        this.TYPE_CANDLE_NAME_1 = lusciousLavender;
-        this.typeCandlePrice1 = lusciousLavenderPrice;
-        this.typeCandleBurnTime1 = lusciousLavenderBurnTime;
-        this.typeCandleAmount1 = lusciousLavenderAmount;
-    }
+Fragrant Floral's
+Amount: 20
+Burn Time: 7 hours
+Dollar per Burn Time: 10.71
+Price: $75.00
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    // getters for type one candle, I am making this to make getting and setting
-    // easier for math part later
-    public int lusciousLavenderAmount() {
-        return this.typeCandleAmount1;
-    }
+Spicy N' Dicey
+Amount: 5
+Burn Time: 12 hours
+Dollar per Burn Time: 2.50
+Price: $29.95
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    public double lusciousLavenderPrice() {
-        return this.typeCandlePrice1;
-    }
-
-    public String lusciousLavender() {
-        return this.TYPE_CANDLE_NAME_1;
-    }
-
-    public int lusciousLavenderBurnTime() {
-        return this.typeCandleBurnTime1;
-    }
-
-    public void setLusciousLavenderAmount(int newLusciousLavenderAmount) {
-        this.typeCandleAmount1 = newLusciousLavenderAmount;
-    }
-
-    public void setLusciousLavenderPrice(double newLusciousLavenderPrice) {
-        this.typeCandlePrice1 = newLusciousLavenderPrice;
-    }
-
-    public void setLusciousLavenderBurnTime(int newLusciousLavenderBurnTime) {
-        this.typeCandleBurnTime1 = newLusciousLavenderBurnTime;
-    }
-}
-
-// List out the Type attributes for candle two
-class TypeCandleTwo {
-    public final String TYPE_CANDLE_NAME_2;
-    private double typeCandlePrice2;
-    private int typeCandleBurnTime2;
-    private int typeCandleAmount2;
-
-    public TypeCandleTwo(String fragrantFlorals, double fragrantFloralsPrice, int fragrantFloralsBurnTime,
-            int fragrantFloralsAmount) {
-        this.TYPE_CANDLE_NAME_2 = fragrantFlorals;
-        this.typeCandlePrice2 = fragrantFloralsPrice;
-        this.typeCandleBurnTime2 = fragrantFloralsBurnTime;
-        this.typeCandleAmount2 = fragrantFloralsAmount;
-    }
-
-    public int fragrantFloralsAmount() {
-        return this.typeCandleAmount2;
-    }
-
-    public double fragrantFloralsPrice() {
-        return this.typeCandlePrice2;
-    }
-
-    public String fragrantFlorals() {
-        return this.TYPE_CANDLE_NAME_2;
-    }
-
-    public int fragrantFloralsBurnTime() {
-        return this.typeCandleBurnTime2;
-    }
-
-    public void setFragrantFloralsAmount(int newFragrantFloralsAmount) {
-        this.typeCandleAmount2 = newFragrantFloralsAmount;
-    }
-
-    public void setFragrantFloralsPrice(double newFragrantFloralsPrice) {
-        this.typeCandlePrice2 = newFragrantFloralsPrice;
-    }
-
-    public void setFragrantFloralsBurnTime(int newFragrantFloralsBurnTime) {
-        this.typeCandleBurnTime2 = newFragrantFloralsBurnTime;
-    }
-}
-
-// List out the Type attributes for candle three
-class TypeCandleThree {
-    public final String TYPE_CANDLE_NAME_3;
-    private double typeCandlePrice3;
-    private int typeCandleBurnTime3;
-    private int typeCandleAmount3;
-
-    public TypeCandleThree(String spicyNDicey, double spicyNDiceyPrice, int spicyNDiceyBurnTime,
-            int spicyNDiceyAmount) {
-        this.TYPE_CANDLE_NAME_3 = spicyNDicey;
-        this.typeCandlePrice3 = spicyNDiceyPrice;
-        this.typeCandleBurnTime3 = spicyNDiceyBurnTime;
-        this.typeCandleAmount3 = spicyNDiceyAmount;
-    }
-
-    public int spicyNDiceyAmount() {
-        return this.typeCandleAmount3;
-    }
-
-    public double spicyNDiceyPrice() {
-        return this.typeCandlePrice3;
-    }
-
-    public String spicyNDicey() {
-        return this.TYPE_CANDLE_NAME_3;
-    }
-
-    public int spicyNDiceyBurnTime() {
-        return this.typeCandleBurnTime3;
-    }
-
-    public void setSpicyNDiceyAmount(int newSpicyNDiceyAmount) {
-        this.typeCandleAmount3 = newSpicyNDiceyAmount;
-    }
-
-    public void setSpicyNDicey(double newSpicyNDiceyPrice) {
-        this.typeCandlePrice3 = newSpicyNDiceyPrice;
-    }
-
-    public void setSpicyNDiceyBurnTime(int newSpicyNDiceyBurnTime) {
-        this.typeCandleBurnTime3 = newSpicyNDiceyBurnTime;
-    }
-}
-
-public class CandleShop {
-    public static void main(String[] args) throws InterruptedException {
-        // Candle Objects
-        TypeCandleOne candleOne = new TypeCandleOne("Luscious Lavender", 2.50, 5, 0);
-        TypeCandleTwo candleTwo = new TypeCandleTwo("Fragrant Floral's", 3.75, 7, 0);
-        TypeCandleThree candleThree = new TypeCandleThree("Spicy N' Dicey", 5.99, 12, 0);
-
-        Scanner keyboard = new Scanner(System.in);
-        // other variables to help complete the algorithm to sell Candles
-        System.out.println("Enter 0 to continue: ");
-        int continuePrompt = keyboard.nextInt();
-        System.out.println(
-                "How many of the " + candleOne.lusciousLavender() + " candles would you like? Enter a number amount.");
-        int lusciousLavenderKey = keyboard.nextInt();
-        System.out.println("How many of the Fragrant Floral's candles would you like? Enter a number amount.");
-        int fragrantFloralsKey = keyboard.nextInt();
-        System.out.println("How many of the Spice N' Dice candles would you like? Enter a number amount.");
-        int spicyNDiceyKey = keyboard.nextInt();
-        // Set the keyboard inputs for amounts
-        candleOne.setLusciousLavenderAmount((int) lusciousLavenderKey);
-        candleTwo.setFragrantFloralsAmount((int) fragrantFloralsKey);
-        candleThree.setSpicyNDiceyAmount((int) spicyNDiceyKey);
-
-        // gets the price of each candle individually
-        double userCandleChoicePrice1 = (double) candleOne.lusciousLavenderAmount() * candleOne.lusciousLavenderPrice();
-        double userCandleChoicePrice2 = (double) candleTwo.fragrantFloralsAmount() * candleTwo.fragrantFloralsPrice();
-        double userCandleChoicePrice3 = (double) candleThree.spicyNDiceyAmount() * candleThree.spicyNDiceyPrice();
-        // adds up the total of each individual candle
-        double userCandleTotalPrice = (double) userCandleChoicePrice1 + userCandleChoicePrice2 + userCandleChoicePrice3;
-        // Determines the total Burn time in hours
-        int totalBurnTime = (int) (lusciousLavenderKey * candleOne.lusciousLavenderBurnTime())
-                + (fragrantFloralsKey * candleTwo.fragrantFloralsBurnTime())
-                + (spicyNDiceyKey * candleThree.spicyNDiceyBurnTime());
-        // Determines the amount per burn time of each candle
-        double updatedBurnTime1 = (double) userCandleChoicePrice1 / candleOne.lusciousLavenderBurnTime();
-        double updatedBurnTime2 = (double) userCandleChoicePrice2 / candleTwo.fragrantFloralsBurnTime();
-        double updatedBurnTime3 = (double) userCandleChoicePrice3 / candleThree.spicyNDiceyBurnTime();
-        double updatedBurnTimeTotal = (double) updatedBurnTime1 + updatedBurnTime2 + updatedBurnTime3;
-
-        // I used two methods to format my double values
-        // This is where I format using an import text method
-        DecimalFormat formatter = new DecimalFormat("0.00");
-        String formatted1 = formatter.format(updatedBurnTime1);
-        String formatted2 = formatter.format(updatedBurnTime2);
-        String formatted3 = formatter.format(updatedBurnTime3);
-        String formattedTotal = formatter.format(updatedBurnTimeTotal);
-
-        // Easter egg
-        if (continuePrompt <= 1000) {
-
-            // prints out each individual price totals
-            // This line is used to make the results easier to read from the console
-            // Break Line
-            System.out.println("\n" + "Receipt");
-            System.out.println("\n"
-                    + "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
-
-            System.out.printf(
-                    candleOne.lusciousLavender() + "\n" + "Amount: " + candleOne.lusciousLavenderAmount() + "\n"
-                            + "Burn Time: " + candleOne.lusciousLavenderBurnTime() + " hours" + "\n"
-                            + "Dollar per Burn Time: " + formatted1 + "\n" + "Price: $" + "%.2f",
-                    userCandleChoicePrice1);
-            // Break Line
-            System.out.println("\n"
-                    + "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
-
-            System.out.printf(
-                    candleTwo.fragrantFlorals() + "\n" + "Amount: " + candleTwo.fragrantFloralsAmount() + "\n"
-                            + "Burn Time: " + candleTwo.fragrantFloralsBurnTime() + " hours" + "\n"
-                            + "Dollar per Burn Time: " + formatted2 + "\n" + "Price: $" + "%.2f",
-                    userCandleChoicePrice2);
-            // Break Line
-            System.out.println("\n"
-                    + "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
-
-            System.out.printf(
-                    candleThree.spicyNDicey() + "\n" + "Amount: " + candleThree.spicyNDiceyAmount() + "\n"
-                            + "Burn Time: " + candleThree.spicyNDiceyBurnTime() + " hours" + "\n"
-                            + "Dollar per Burn Time: " + formatted3 + "\n" + "Price: $" + "%.2f",
-                    userCandleChoicePrice3);
-            // Break Line
-            System.out.println("\n"
-                    + "+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++" + "\n");
-
-            // prints out the total price of all the candles added together
-            System.out.printf("Total Burn Time: " + totalBurnTime + "\n" + "Total Dollar per Burn Time: "
-                    + formattedTotal + "\n" + "Total Price: " + "%.2f", userCandleTotalPrice);
-            System.out.println("\n");
-            // in interaction tab -- > run CandleShop
-        } else if (continuePrompt > 1000) {
-            System.out.println(
-                    "Hey! your not supposed to be back here. Get out of here and put those candles back where you found them!
-                    This area is EMPLOYEE ONLY!!");
-            Thread.sleep(3000);
-            System.out.println("This is my last Warning!");
-            Thread.sleep(4000);
-            System.out.println("Ok! you made me do it. You are now banned from the Candle Shop!");
-        }
-    }
-}
+Total Burn Time: 260
+Total Dollar per Burn Time: 19.21
+Total Price: 134.95
             </pre>
           </code>
           <p>
