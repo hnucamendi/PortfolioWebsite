@@ -136,6 +136,7 @@ code pre {
   line-height: 4rem;
   text-align: center;
 }
+
 /* MAIN-NAV // GLOBAL */
 /* ****************** */
 
@@ -222,9 +223,12 @@ main img {
 /* BUTTON MENU */
 /* *********** */
 
-#hidden {
+#hidden-tech {
   display: none;
 }
+/* #hidden-pd {
+  display: none;
+} */
 
 .btn-menu {
   width: 50rem;
@@ -269,6 +273,10 @@ main img {
   align-items: center;
 }
 
+.tech-content img {
+  width: 110rem;
+}
+
 .tech-btn {
   margin-bottom: 6rem;
 }
@@ -276,6 +284,15 @@ main img {
 .tech-horizontal h3 {
   margin-top: 6rem;
   border-bottom: #f8f9fa 1px dashed;
+}
+
+video {
+  width: 100rem;
+}
+
+iframe {
+  width: 120rem;
+  height: 75vh;
 }
 /* PD CONTENT */
 /* ********** */
