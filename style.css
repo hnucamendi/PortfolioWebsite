@@ -176,8 +176,10 @@ code pre {
 
 .second-nav:link,
 .second-nav:visited {
-  font-size: 1.8rem;
-  color: #ced4da;
+  font-size: 2.3rem;
+  color: #69db7c;
+  text-shadow: 0 0.1rem 0.2rem#f8f9fa;
+  border: 0.1rem #69db7c solid;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -185,7 +187,9 @@ code pre {
 
 .second-nav:active,
 .second-nav:hover {
-  color: #868e96;
+  color: #f8f9fa;
+  transition: ease 200ms;
+  font-size: 2.8rem;
 }
 /* MAIN CONTENT / HOME */
 /* ******************* */
@@ -299,6 +303,18 @@ video {
 
 /* PD CONTENT */
 /* ********** */
+
+.pd-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pd-video {
+  width: 100rem;
+  height: 45rem;
+  margin: 6rem;
+}
 
 /* ABOUT CONTENT */
 /* ************* */
