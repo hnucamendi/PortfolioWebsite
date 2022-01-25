@@ -38,7 +38,8 @@ h5 {
 button {
   text-align: center;
   border: none;
-  border-bottom: #f8f9fa 1px dashed;
+  transition: ease 500ms;
+  /* border-bottom: #f8f9fa 1px dashed;s */
   background-color: #212529;
   color: #f8f9fa;
   text-transform: uppercase;
@@ -54,6 +55,7 @@ button:active,
 button:hover {
   text-shadow: -0.5rem -0.1rem 0.1rem #065a60, 0.5rem -0.1rem 0.1rem #0b525b,
     -0.5rem 0.1rem 0.1rem #144552, 0.5rem 0.1rem 0.1rem #1b3a4b;
+  width: 80rem;
 }
 
 .section-title {
@@ -134,7 +136,7 @@ code pre {
 
 .wrapper p {
   line-height: 4rem;
-  text-align: center;
+  /* text-align: center; */
 }
 
 /* MAIN-NAV // GLOBAL */
@@ -224,6 +226,14 @@ main img {
   width: 50rem;
 }
 
+.descriptions {
+  width: 100rem;
+}
+
+.descriptions p {
+  text-align: left;
+}
+
 /* BUTTON MENU */
 /* *********** */
 
@@ -304,20 +314,54 @@ video {
 /* PD CONTENT */
 /* ********** */
 
+.parallax-pd_img {
+  margin: 6rem 0;
+}
+
 .pd-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+.pd-img {
+  width: 90rem;
+  /* padding: 6rem; */
+}
+
 .pd-video {
-  width: 100rem;
-  height: 45rem;
-  margin: 6rem;
+  margin: 6rem 0;
+}
+
+.pd-img_link:hover {
+  border: 0.1rem #f8f9fa dashed;
+  box-shadow: 0 0.8rem 100rem #000;
+  transition: ease 1000ms;
 }
 
 /* ABOUT CONTENT */
 /* ************* */
+
+.description p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.3rem;
+}
+
+.desc-about p {
+  background-color: #343a40;
+  box-shadow: 0 1rem 5rem#000;
+  padding: 6rem;
+}
+
+.desc-about:last-child {
+  margin-bottom: 6rem;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /* LINKS CONTENT */
 /* ************* */
@@ -349,7 +393,8 @@ video {
 }
 .contact-form {
   height: 75vh;
-  margin: 6rem;
+
+  margin: 3rem;
 
   display: flex;
   flex-direction: column;
@@ -361,9 +406,11 @@ video {
 .contact-form input {
   width: 100%;
   height: 10rem;
-  background-color: transparent;
-  color: #212529;
+  padding: 2rem;
+  background-color: #343a40;
+  color: #f8f9fa;
   border: none;
+  border-radius: 0.8rem;
 }
 
 input[type="text"] {
@@ -377,12 +424,21 @@ input[type="email"] {
   text-transform: uppercase;
 }
 
-.form-item textarea {
-  font-family: "Montserrat", sans-serif;
+input::placeholder,
+textarea::placeholder {
+  color: #f8f9fa;
+  text-transform: uppercase;
+}
+textarea {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100rem;
+  height: 80rem;
   border: none;
-  background-color: transparent;
+  background-color: #343a40;
+  padding: 2rem;
+  border-radius: 0.8rem;
   resize: none;
   font-size: 2.4rem;
   font-weight: 500;
-  color: #212529;
+  color: #f8f9fa;
 }
