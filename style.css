@@ -1,7 +1,7 @@
 /*
 TYPE SCALE : 55 / 44 / 35 / 28 / 23 / 18* / 14 / 12 / 9
 COLOR : #087f5b / #065a60 / #0b525b / #144552 / #1b3a4b / #212f45 / #272640 / #312244 / #3e1f47 / #4d194d
-WHITES : #f8f9fa / #dee2e6 / #868e96
+WHITES : #f8f9fa / #dee2e6 / #868e96 / #212529
 */
 
 /* ****** */
@@ -20,7 +20,10 @@ html {
 
 body {
   font-family: "Quantico", sans-serif;
-  background-color: #212529;
+  /* background-image: url("img/parallax/stacked-waves-haikei.svg"); */
+  background-image: url("img/parallax/low-poly-grid-haikei.svg");
+  aspect-ratio: 16/9;
+  /* background-size: cover; */
 }
 
 h1,
@@ -37,6 +40,7 @@ h5 {
 
 button {
   text-align: center;
+
   border: none;
   transition: ease 500ms;
   /* border-bottom: #f8f9fa 1px dashed;s */
@@ -83,8 +87,10 @@ h5 {
 }
 
 p {
-  font-size: 1.8rem;
+  font-size: 2.3rem;
   color: #f8f9fa;
+  text-shadow: 0 0.3rem 0.8rem #000;
+  font-weight: 500;
 }
 
 code {
@@ -179,6 +185,7 @@ code pre {
 .second-nav:link,
 .second-nav:visited {
   font-size: 2.3rem;
+  padding: 1rem;
   color: #69db7c;
   text-shadow: 0 0.1rem 0.2rem#f8f9fa;
   border: 0.1rem #69db7c solid;
@@ -192,6 +199,7 @@ code pre {
   color: #f8f9fa;
   transition: ease 200ms;
   font-size: 2.8rem;
+  padding: 1.1rem;
 }
 /* MAIN CONTENT / HOME */
 /* ******************* */
