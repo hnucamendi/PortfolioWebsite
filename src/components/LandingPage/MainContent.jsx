@@ -25,15 +25,19 @@ const MainContent = ({ logos }) => {
             programming.
           </p>
           <div className="logo-container">
-            {logos.map((item) => (
-              <div key={item.id}>
-                <img
-                  src={item.img}
-                  alt="tech logo"
-                  className="main-logo_section"
-                />
-              </div>
-            ))}
+            {logos
+              .filter((item) => {
+                if (item.item_type === "logos") return item;
+              })
+              .map((item) => (
+                <div key={item.id}>
+                  <img
+                    src={item.img}
+                    alt="tech logo"
+                    className="main-logo_section"
+                  />
+                </div>
+              ))}
           </div>
         </div>
       </div>

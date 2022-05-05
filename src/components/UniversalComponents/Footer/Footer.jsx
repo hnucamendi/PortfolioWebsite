@@ -1,32 +1,6 @@
-import React, { useState } from "react";
-import Axios from "axios";
+import React from "react";
 
-const Footer = ({ catData }) => {
-  const [fName, setFName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
-
-  const handleForm = (e) => {
-    e.preventDefault();
-
-    if (email.includes("@")) {
-      Axios.post("http://www.oldjimmy.com:8000/form", {
-        userName: fName,
-        userEmail: email,
-        userMessage: message,
-      })
-        .then(() => {
-          alert("success");
-        })
-        .catch((err) => {
-          throw err;
-        });
-    } else {
-      alert("Enter Proper Email Address");
-      return;
-    }
-  };
-
+const Footer = () => {
   return (
     <>
       <div className="parallax parallax-links_img"></div>
@@ -55,9 +29,6 @@ const Footer = ({ catData }) => {
               type="text"
               placeholder="Name"
               className="form-01"
-              onChange={(e) => {
-                setFName(e.target.value);
-              }}
               required
             />
             <input
@@ -65,27 +36,16 @@ const Footer = ({ catData }) => {
               type="email"
               placeholder="Email"
               className="form-02"
-              onChange={(e) => {
-                setEmail(e.target.value);
-              }}
               required
             />
-            <textarea
-              className="form-03"
-              placeholder="Message"
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
-            ></textarea>
+            <textarea className="form-03" placeholder="Message"></textarea>
 
-            <button className="submit-btn" onClick={handleForm}>
-              Submit
-            </button>
+            <button className="submit-btn">Submit</button>
           </form>
           <div
             className="form-img"
             style={{
-              backgroundImage: `url(${catData[0].url})`,
+              backgroundImage: `url("./img/cat/Cat.jpeg")`,
               backgroundPosition: "center",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
