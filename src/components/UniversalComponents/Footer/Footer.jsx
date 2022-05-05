@@ -45,7 +45,7 @@ const Footer = () => {
           <div
             className="form-img"
             style={{
-              backgroundImage: `url("./img/cat/Cat.jpeg")`,
+              backgroundImage: `url("./img/cat/Cat.jpg")`,
               backgroundPosition: "center",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
