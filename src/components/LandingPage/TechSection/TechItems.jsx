@@ -26,6 +26,8 @@ const TechItems = ({ data }) => {
                     className="tech_img"
                   />
 
+                  <img src="./img/techImg/c9tesla.jpg"></img>
+
                   <div className="descriptions">
                     <p>{item.description}</p>
                   </div>
