@@ -2,7 +2,7 @@
   {
     "id": 1,
     "title": "Gateway Project",
-    "img": "./img/techImg/gateWayImg.jpeg",
+    "img": "./img/techImg/gateWayImg.jpg",
     "description": "Gateway Project only used HTML and CSS but it was the beginning of my web development journey.",
     "github_link": "https://github.com/ArriolaHarold2001/gatewayWebsite",
     "item_link": "https://master.djt1z8vn4fqut.amplifyapp.com/",
@@ -11,7 +11,7 @@
   {
     "id": 2,
     "title": "Code for Justice",
-    "img": "./img/techImg/codeForJustice.jpeg",
+    "img": "./img/techImg/codeForJustice.jpg",
     "description": "The first project where I worked with a team to create a static website.",
     "github_link": "https://github.com/ArriolaHarold2001/justiceWebsite",
     "item_link": "https://master.d3305b2fz9d4xf.amplifyapp.com/",
@@ -20,7 +20,7 @@
   {
     "id": 3,
     "title": "Hope Hacks",
-    "img": "./img/techImg/hopeHacks.jpeg",
+    "img": "./img/techImg/hopeHacks.jpg",
     "description": "My first group project that involved building a full stack web application.",
     "github_link": "https://github.com/ArriolaHarold2001/hopeHacks",
     "item_link": "http://www.c9newsoutlet.com",
@@ -29,7 +29,7 @@
   {
     "id": 4,
     "title": "E-commerce V3",
-    "img": "./img/techImg/ecommerceV1SH.jpeg",
+    "img": "./img/techImg/ecommerceV1SH.jpg",
     "description": "The third version of the E-Commerce project and the final iteration.",
     "github_link": "https://github.com/ArriolaHarold2001/ecommerce-v3",
     "item_link": "http://www.nucaprints.com",
@@ -38,7 +38,7 @@
   {
     "id": 5,
     "title": "Tesla Redesign",
-    "img": "./img/techImg/c9tesla.jpeg",
+    "img": "./img/techImg/c9tesla.jpg",
     "description": "Redesign for the Tesla website.",
     "github_link": "https://github.com/rsiraj/teslaclone",
     "item_link": "http://c9tesla.com",
@@ -47,7 +47,7 @@
   {
     "id": 6,
     "title": "Nether Traveler",
-    "img": "./img/techImg/nether-travel.jpeg",
+    "img": "./img/techImg/nether-travel.jpg",
     "description": "One of my first solo projects in Java",
     "github_link": "https://github.com/ArriolaHarold2001/Nether-Travel/tree/main/Nether%20Traveler/Nether%20Traveler",
     "item_link": "",
@@ -56,7 +56,7 @@
   {
     "id": 7,
     "title": "Candle Shop",
-    "img": "./img/techImg/candleshop.jpeg",
+    "img": "./img/techImg/candleshop.jpg",
     "description": "A project for my intro to Java Class, I included some easter eggs in the code",
     "github_link": "https://github.com/ArriolaHarold2001/CandleShopProgram",
     "item_link": "",
